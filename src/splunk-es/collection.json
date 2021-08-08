@@ -1,0 +1,13 @@
+{
+  "collection": [
+    {"user_intel": ["user"]},
+    {"file_intel": ["file_name", "file_hash"]},
+    {"ip_intel": ["ip", "domain"]},
+    {"http_intel": ["http_user_agent", "ip", "http_referrer", "url", "domain"]},
+    {"email_intel": ["embedded_domain", "src_user", "subject", "file_hash", "file_name", "embedded_ip"]},
+    {"service_intel": ["service_file_hash", "service_dll_file_hash", "service_dll_file_name", "service_file_name", "service"]},
+    {"process_intel": ["dest", "src", "process_file_name", "process"]},
+    {"registry_intel": ["registry_path", "registry_value_name", "registry_value_text", "user"]},
+    {"certificate_intel": ["certificate_issuer_common_name", "certificate_subject_common_name", "certificate_common_name", "certificate_issuer_organization", "certificate_subject_organization", "certificate_serial", "certificate_issuer", "certificate_subject", "certificate_issuer_unit", "certificate_subject_unit", "certificate_issuer_email", "certificate_subject_email", "ip", "domain"]}
+  ]
+}
