@@ -7,7 +7,7 @@ from splunklib.client import connect, Service
 class Splunk:
     """SPLUNK Class"""
 
-    def __init__(self, username: Union[str], password: Union[str],
+    def __init__(self, username: str, password: str,
                  host: Union[str] = 'localhost', port: Union[int] = 8089,
                  scheme: Union[str] = 'https', verify: Union[bool] = True,
                  owner: Union[str] = None, app: Union[str] = None,
@@ -65,7 +65,7 @@ class Splunk:
                 bind_dictionary.pop(key)
         self.kwargs = bind_dictionary
 
-    def connect(self) -> Union[Service]:
+    def connect(self) -> Service:
         """This function connects and logs in to a Splunk instance.
 
         :return: An initialized Service connection.
